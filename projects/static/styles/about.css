@@ -1,0 +1,20 @@
+.about_me h2:first-child{
+    color: #09FC6A;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
+.about_me h2:nth-child(2), .about_me h2:nth-child(3){
+    color: #FFFFFF;
+    line-height: 30px;
+    font-size: 22.5px;
+}
+
+.about_me h2:nth-child(2){
+    margin-bottom: 2rem;
+}
+.about_me{
+    text-align: center;
+    margin: 3rem 1rem 3rem;
+}
+

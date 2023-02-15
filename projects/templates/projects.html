@@ -1,0 +1,79 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+<section id="tech">
+    <div class="tech">
+        <h2>Tecnologías</h2>
+        <h2>Trabajo con lo siguiente: </h2>
+    </div>
+
+
+    <div class="card_tech_container">
+        {% for t in technologies %}
+        <img src="{{t.icon.url}}" alt="">
+        {% endfor%}
+    </div>
+</section>
+
+<section id="about">
+    <div class="about_me">
+        <h2>Acerca de mi</h2>
+        <h2>Mi camino en la tecnología
+            comenzó hace muchos años
+            cuando experimenté con el
+            sistema operativo de mi teléfono,
+            cambiándolo de Firefox OS a
+            Android. Desde entonces, he sido
+            un apasionado de la tecnología,
+            solucionando problemas de
+            software en teléfonos y creando
+            mi primera página web sobre
+            futbol cuando tenía 9 años!.
+            </p>
+            <h2>
+                Inspirado por mi amor hacia la
+                programación, decidí estudiar
+                ingeniería en informática y
+                también he estado involucrado en
+                el diseño gráfico, edición de
+                videos trabajando en mis propios
+                proyectos en este campo.
+                </p>
+    </div>
+
+    <div class="slider_container">
+        <div class="slider">
+            <h2>01000010 01101001 01100101 01100111</h2>
+            <h2>01000010 01101001 01100101 01100111</h2>
+        </div>
+        <div class="slider">
+            <h2>01000010 01101001 01100101 01100111</h2>
+            <h2>01000010 01101001 01100101 01100111</h2>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="projects_title">
+        <h2>Mis proyectos</h2>
+    </div>
+
+    <div class="projects_container">
+        {% for p in projects%}
+        <div class="project_card">
+            <div class="project_image">
+                <img src="{{p.image.url}}" alt="{{p.title}}">
+            </div>
+            <div class="project_info">
+                <h2>{{p.title}}</h2>
+                <p>{{p.description}}</p>
+                <a href="{{p.link}}" target="_blank">Enlace</a>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
+
+</section>
+
+
+{% endblock%}

@@ -1,0 +1,31 @@
+.tech h2:first-child{
+    color: #09FC6A;
+    margin-bottom: 2rem;
+    
+}
+
+.tech h2:last-child{
+    color: #FFFFFF;
+}
+
+.tech{
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.card_tech_container img{ 
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+}
+
+.card_tech_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:20px;
+}

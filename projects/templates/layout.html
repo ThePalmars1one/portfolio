@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/tech.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/navigation.css' %}">
+    <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming" rel="stylesheet"
+        type="text/css">
+    <title>Django Portfolio</title>
+</head>
+
+<body>
+
+    {% include 'partials/navigation.html' %}
+    
+    {% include 'partials/home.html'%}
+
+    {% block content%}
+    {% endblock %}
+
+    {% include 'partials/footer.html' %}
+
+    <script src="{% static 'js/menu.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"><script>
+</body>
+
+</html>

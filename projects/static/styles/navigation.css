@@ -1,0 +1,54 @@
+.menu_options{
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: #09FC6A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: top 0.2s ease-in-out;
+}
+
+.menu_options a{
+    background: none;
+    text-decoration: none;
+    font-size: 30px;
+    color: #03193A;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.menu_options.active{
+    top: 98px;
+}
+
+.menu_icons{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 3rem;
+}
+
+.menu_container{
+    padding-top: 3rem;
+}
+
+.menu_icons.active img, .menu_icons.active{
+    background: #09FC6A;
+}
+
+.menu_container.active{
+    background: #09FC6A;
+}
+
+.menu_button{
+    cursor: pointer;
+}
+
+

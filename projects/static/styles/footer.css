@@ -1,0 +1,37 @@
+.footer_container figure, .footer_container h2, .footer_container, .footer_container img, .footer_container h1{
+    display: block;
+    background: #09FC6A;
+}
+
+.footer_email{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #09FC6A;
+}
+
+.footer_container figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container figure:nth-child(1), .footer_container figure:nth-child(2){
+    margin-bottom: 2rem;
+}
+
+hr{
+    margin-top: 2rem;
+    background:#03193A;
+    height: 10px;
+}
+
+.footer_container h1{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer_container figure:first-child{
+    padding-top: 2rem;
+}
