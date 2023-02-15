@@ -21,6 +21,7 @@
     border-radius: 25px;
     width: 150px;
     height: 150px;
+    transition: all 0.2s ease-in-out;
 }
 
 .card_tech_container{
@@ -29,3 +30,15 @@
     flex-wrap: wrap;
     gap:20px;
 }
+
+.card_tech_container img:not(:hover) {
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+  
+  
+  
+  
+  
+  
