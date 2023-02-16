@@ -24,12 +24,13 @@
     transition: all 0.2s ease-in-out;
 }
 
-.card_tech_container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap:20px;
-}
+.card_tech_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: center;
+  }
 
 .card_tech_container img:not(:hover) {
     opacity: 1;
@@ -40,7 +41,6 @@
     .tech{
         font-size: 25px;
     }
-
 }
   
   
