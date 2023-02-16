@@ -7,3 +7,6 @@ class Programate_projects(models.Model):
     description = models.CharField(max_length= 100)
     image = ImageField (upload_to="portfolio/img/")
     link = models.URLField(blank= True)
+
+    def __str__(self):
+        return f"{self.title} - {self.description}"
