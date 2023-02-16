@@ -1,4 +1,4 @@
-.greetings{
+.greetings {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -7,11 +7,13 @@
     font-size: 20px;
 }
 
-.greetings h1:first-child, .info_about h1:first-child{
+.greetings h1:first-child,
+.info_about h1:first-child {
     color: #09FC6A;
 }
 
-.greetings h1:last-child, .info_about h1:last-child{
+.greetings h1:last-child,
+.info_about h1:last-child {
     color: #FFFFFF;
 }
 
@@ -21,19 +23,19 @@
     line-height: 40px;
 }
 
-.laptop{
+.laptop {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-.laptop img{
+.laptop img {
     height: 280px;
     width: 380px;
 }
 
-.home_description{
+.home_description {
     color: #FFFFFF;
     text-align: center;
     font-size: 15px;
@@ -41,7 +43,7 @@
 }
 
 
-.slider h2{
+.slider h2 {
     display: inline-block;
     animation: slide 10s linear infinite;
     margin: 0;
@@ -51,24 +53,29 @@
     line-height: 30px;
 }
 
-.slider{
+.slider {
     white-space: nowrap;
     overflow: hidden;
 }
 
-.slider:nth-child(1), .slider:nth-child(3), .slider:nth-child(5){
+.slider:nth-child(1),
+.slider:nth-child(3),
+.slider:nth-child(5) {
     color: #FFFFFF;
 }
 
-.slider:nth-child(2), .slider:nth-child(4){
+.slider:nth-child(2),
+.slider:nth-child(4) {
     color: #09FC6A;
 }
 
-.slider:nth-child(1) h2, .slider:nth-child(4) h2{
+.slider:nth-child(1) h2,
+.slider:nth-child(4) h2 {
     animation: slide 15s linear infinite;
 }
 
-.slider:nth-child(2) h2, .slider:nth-child(5) h2{
+.slider:nth-child(2) h2,
+.slider:nth-child(5) h2 {
     animation: slide 10s linear infinite;
 }
 
@@ -81,22 +88,48 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
 }
 
-@media screen and (min-width: 550px){
-    .slider:nth-child(3), .slider:nth-child(4), .slider:nth-child(5){
+@media screen and (min-width: 550px) {
+
+    .slider:nth-child(3),
+    .slider:nth-child(4),
+    .slider:nth-child(5) {
         display: none;
-    }  
+    }
 }
 
 @media screen and (min-width: 780px) {
-    .greetings_container{
+    .greetings_container {
         display: flex;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .laptop img {
+        height: 380px;
+        width: 480px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .greetings, .info_about{
+        font-size: 25px;
+    }
+
+    .home_description{
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .laptop img {
+        height: 480px;
+        width: 580px;
     }
     
 }

@@ -18,3 +18,13 @@
     margin: 3rem 1rem 3rem;
 }
 
+@media screen and (min-width: 1200px) {
+    .about_me h2:first-child{
+        font-size: 37.5px;
+    }
+
+    .about_me h2:nth-child(2), .about_me h2:nth-child(3){
+        font-size: 27px;
+    }
+}
+
