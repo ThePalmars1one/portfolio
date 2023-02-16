@@ -5,6 +5,7 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 20px;
+    text-align: center;
 }
 
 .greetings h1:first-child,
@@ -132,4 +133,19 @@
         width: 580px;
     }
     
+}
+
+@media screen and (max-width: 399px){
+    .laptop img {
+        height: 220px;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .greetings{
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
 }
